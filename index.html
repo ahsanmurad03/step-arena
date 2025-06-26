@@ -25,20 +25,30 @@
         <!-- for icon  -->
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <!-- Media Query File Links -->
+            <link rel="stylesheet" href="assets/css/mobilemediaquery.css">
+            <link rel="stylesheet" href="assets/css/mobilequery425px.css">
+            <link rel="stylesheet" href="assets/css/mobilequery768.css">
+            <link rel="stylesheet" href="assets/css/mediaquery600px.css">
+            <link rel="stylesheet" href="assets/css/mediaquery1024.css">
+            <link rel="stylesheet" href="assets/css/mediaquery1440.css">
+
+            <!-- Link Script.js File  -->
+             <link rel="stylesheet" href="assets/js/script.js">
     </head>
     <body>
         <header>
-            <div class="topbar">
-                <div><i class='fa fa-map-marker'></i><span>Marigona
-                        Hill</span></div>
+            <div class="topbar" id="topbar">
+                <div><i class='fa fa-map-marker'></i><span>Marigona Hill</span></div>
                 <div class="pipe-line">|</div>
-                <div><i class='fa fa-phone'></i><span>Contact us: +383 (0) 49
-                        333 934 </span></div>
+                <div><i class='fa fa-phone-alt'></i><span>Contact us: <span class="text">+383 (0) 49
+                        333 934</span></div>
             </div>
 
             <nav>
-                <div class="navimg"><img src="assets/images/Logo.png" alt></div>
-                <div class="nav-menu">
+                <div class="navimg" id="nav"><img src="assets/images/Logo.png" alt></div>
+                <div class="nav-menu active">
                     <a href="#">HOME</a>
                     <a href="#">ABOUT US</a>
                     <a href="#">OUTDOOR</a>
@@ -51,7 +61,10 @@
                 </div>
                 <div class="nav-btn"><button><a
                             href="#">MEMBERSHIPS</a></button></div>
+                
+                <div class="hamburger" id="icon"><i class="fa fa-bars"></i></div>
             </nav>
+            
         </header>
 
         <div class="main">
@@ -380,7 +393,7 @@
 
                 <div class="secound">
                     <div class="bottom-gallery-innersec2">
-                        <div><img
+                        <div class="bottom-gallery-innersec2-img"><img
                                 src="assets/images/Screenshot 2025-06-23 233755.png"
                                 alt></div>
                         <div>
@@ -396,7 +409,7 @@
                     </div>
 
                     <div class="bottom-gallery-innersec2">
-                        <div><img
+                        <div class="bottom-gallery-innersec2-img"><img
                                 src="assets/images/Screenshot 2025-06-23 233817.png"
                                 alt></div>
                         <div>
@@ -412,7 +425,7 @@
                     </div>
 
                     <div class="bottom-gallery-innersec2">
-                        <div><img
+                        <div class="bottom-gallery-innersec2-img"><img
                                 src="assets/images/Screenshot 2025-06-23 233837.png"
                                 alt></div>
                             <div>
@@ -448,9 +461,9 @@
                             parent, or a recreational visitor.</p>
 
                         <div class="inputs">
-                            <div><input type="text" placeholder="Emri" class="small"></div>
-                            <div><input type="text" placeholder="Mbiemri" class="small"></div>
-                            <div><input type="text" placeholder="Email:" class="large"></div>
+                            <div class="small-inputDivs"><input type="text" placeholder="Emri" class="small">
+                            <input type="text" placeholder="Mbiemri" class="small"></div>
+                            <div class="large-inputDivs"><input type="text" placeholder="Email:" class="large"></div>
                         </div>
                     </div>
 
@@ -460,8 +473,11 @@
              <footer>
                 <div class="footer-first">
                     <div class="img"><img src="assets/images/Layer_x0020_1.png" alt=""></div>
-                    <div><i class="fa fa-map"></i><span>Marigona Hill</span></div>
-                    <div><i class="fa fa-phone"></i><span>Contact us: <span class="text">+383 (0) 49 333 934</span></span></div>
+                    <div><i class="fa fa-map-marker"></i><span>Marigona Hill</span></div>
+                    <div><i class="fa fa-phone-alt"></i><span>Contact us: <span class="text">+383 (0) 49 333 934</span></span></div>
+                    <div class="first-footericon"><i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i><i class="fab fa-linkedin"></i>
+                    <i class="fab fa-tiktok"></i><i class="fab fa-youtube"></i>
+                    </div>
                 </div>
 
                 <div class="footer-secound">
@@ -501,6 +517,12 @@
                 <div class="footer-fourth">
                     <img src="assets/images/Vector.png" alt="">
                 </div>
+
             </footer>
+
+            <div class="reserved">
+                    <div class="text"><p>© 2025 Step Arena. All rights are reserved.</p></div>
+                    <div class="reservedIcon"><span class="backTotop">Back to top</span><a href="#topbar"><i class="fas fa-angle-up"></i></a></div>
+            </div>
         </body>
     </html>

@@ -1,0 +1,763 @@
+/* header Section  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topbar{
+    display: flex;
+    gap: 0.9rem;
+    background-color: #2F42DC;
+    padding: 1rem 8rem;
+}
+
+.topbar i{
+    color: white;
+    font-size: 1rem;
+    padding-right: 0.5rem;
+}
+
+.topbar span{
+    font-family: 'Open Sans Hebrew';
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 5rem;
+    width: 100%;
+}
+
+.navimg{
+    width:15% ;
+}
+
+.navimg img{
+    width: 80%;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 70%;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans Hebrew Condensed';
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.nav-menu a:active{
+    color: #2F42DC;
+}
+
+.nav-menu a:hover{
+    color: #2F42DC;
+}
+
+.nav-btn{
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+
+.nav-btn button{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background-color: white;
+    border: 2px solid #2F42DC;
+    border-radius: none;
+    border-left: 4px solid #2F42DC;
+}
+
+.nav-btn a{
+    text-decoration: none;
+    color: #2F42DC;
+    font-family: 'Open Sans Hebrew Condensed';
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.nav-btn button:hover {
+    background-color: #2F42DC;
+}
+
+.nav-btn button:hover a{
+    color: white;
+}
+
+/* -------main section-------  */
+.carousel{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.carousel-item .carousel-text{
+    display: flex;
+    justify-content: left;
+    font-family: 'Open Sans Hebrew Condensed';
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    text-align: left;
+    width: 100%;
+}
+
+.carousel-para{
+    font-family: 'Open Sans Hebrew Condensed';
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+.carousel-btn{
+    padding: 0.5rem 2.5rem;
+    display: flex;
+    justify-content:left;
+    border: 2px solid white;
+    border-left: 4px solid white;
+    background-color: transparent;
+}
+
+.carousel-btn a{
+    text-decoration: none;
+    font-family: 'Open Sans Hebrew Condensed';
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+}
+
+
+/* ------Secound Section------ */
+.section-two{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.section-two .left{
+    width: 50%;
+    height: auto;
+}
+
+.section-two .left img{
+    width: 100%;
+    height: auto;
+}
+
+.section-two .right{
+    width: 50%;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+    background-color: #2F42DC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-two .right h3{
+    font-family: 'Open Sans Hebrew Condensed';
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: white;
+}
+
+.section-two .right p{
+    font-family: 'Open Sans Hebrew Condensed';
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 0.3rem;
+}
+
+.section-two .right .rightsub-para p{
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    margin-top: 1.5rem !important;
+}
+
+.section-two .right .secSection-btn{
+    width: 30%;
+    background-color: #2F42DC;
+    padding: 0.8rem 1rem 0.8rem 1rem; 
+    border: 2px solid white;
+    border-left: 4px solid white;
+    margin-top:2rem;
+}
+
+.section-two .right .secSection-btn a{
+    font-family: 'Open Sans Hebrew Condensed';
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.section-two .right .secSection-btn:hover{
+    background-color: white;
+}
+
+.section-two .right .secSection-btn:hover a{
+    color: #2F42DC;
+}
+
+.third-section{
+    width: 100%;
+    display: flex;
+    gap: 0;
+}
+
+.third-section .first{
+    background-image: url('../images/third-section-first.png');
+    background-position: center center;   
+    background-size: cover;                
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 500px;
+}
+
+.third-section .first:hover{
+    background-image: url('../images/Screenshot 2025-06-23 233224.png');
+}
+
+.third-section .secound{
+    background-image: url('../images/third-section-secound.png');
+    background-position: center center;   
+    background-size: cover;                
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 500px;
+}
+
+.third-section .secound:hover{
+    background-image: url('../images/Screenshot 2025-06-23 233258.png');
+}
+
+.third-section .third{
+    background-image: url('../images/third-section-third.png');
+    background-position: center center;   
+    background-size: cover;                
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 500px;
+}
+
+.third-section .third:hover{
+    background-image: url('../images/Screenshot 2025-06-23 233326.png');
+}
+
+.third-section .fourth{
+    background-image: url('../images/third-section-fourth.png');
+    background-position: center center;   
+    background-size: cover;                
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 500px;
+}
+
+.third-section .fourth:hover{
+    background-image: url('../images/Screenshot 2025-06-23 233354.png');
+}
+
+/* inspire section  */
+.inspire-section{
+    display: flex;
+    gap: 0;
+    padding: 3rem 6rem;
+}
+
+.inspire-section .text{
+    width: 70%;
+}
+
+.inspire-section .inspire-btn{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.inspire-btn button{
+    background-color: transparent;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem; 
+    border: 2px solid #2F42DC;
+    border-left: 4px solid #2F42DC;
+    width: 50%;
+}
+
+.inspire-btn button a{
+    font-family: 'Open Sans Hebrew Condensed';
+    font-weight: 600;
+    font-size: 1rem;
+    color: #2F42DC;
+    text-decoration: none;
+}
+
+.inspire-btn button:hover{
+    background-color: #2F42DC;
+}
+
+.inspire-btn button:hover a{
+    color: white;
+}
+
+.inspire-section .text h3{
+    font-family: 'Open Sans Hebrew Condensed';
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2F42DC;
+}
+
+.inspire-section .text p{
+    font-family: 'Open Sans Hebrew';
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/* tab section  */
+.tab{
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 1rem;
+}
+
+.tab .tab-heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.tab .tab-heading a{
+    font-family: 'Open Sans Hebrew';
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(99, 98, 98);
+    text-decoration: none;
+}
+
+.tab .tab-heading .active{
+    color: #2F42DC;
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+}
+
+.tabGallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.tabimg{
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.tabimg img{
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tabimg img:hover {
+    transform: scale(1.1);  
+}
+
+/* banner section  */
+
+.banner{
+    background-image: url('../images/fit-swimmer-training-by-himself (1) 1.png');
+    background-position: center center;   
+    background-size: cover;                
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    padding: 4.5rem 6rem;
+    margin-top: 3rem;
+
+}
+.inner-banner{
+    display: flex;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.inner-banner .left{
+    width: 40%;
+}
+
+.inner-banner .left h5{
+    font-family: 'Open Sans Hebrew Condensed';
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+}
+
+.inner-banner .left h3{
+    font-family: 'Open Sans Hebrew Condensed';
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: white;
+    word-spacing: 0.4rem;
+}
+
+.inner-banner .right{
+    width: 60%;
+}
+
+.inner-banner .right p{
+    font-family: 'Open Sans Hebrew';
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.testimonials{
+    width: 100%;
+}
+
+.textimonial-box{
+    display: flex;
+    gap: 1rem;
+}
+
+.box {
+    background-color: #6780FF;
+    padding: 2.5rem 1rem;
+    padding-bottom: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.box .quotes{
+    text-align: center;
+}
+
+.box .quotes i{
+    color: #1d3ee3;
+    font-size: 1.6rem;
+}
+
+.box p{
+    font-family: 'Open Sans Hebrew';
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: white;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.box .rating {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+}
+
+.box .rating i{
+    color: #D9D9D9;
+    font-size: 1.4rem;
+}
+
+.circle-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left:0;
+    bottom:1;
+}
+
+.circle-img h5{
+    font-family: 'Open Sans Hebrew';
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    padding-top: 0.7rem;
+}
+/* bottom gallery  */
+.bottom-gallery{
+    display: flex;
+    gap: 1.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-bottom: 5rem;
+}
+
+.bottom-gallery .first{
+    background-image: url('../images/group-swimmers-training-outdoor-pool-top-view 1.png');
+    background-position: center center;   
+    background-size: cover;                
+    background-repeat: no-repeat;
+    width: 50%;
+    height: auto;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    align-items: end;
+    transition: background-size 0.10s ease-in-out
+}
+
+.bottom-gallery .first:hover{
+    background-size: 110%;
+}
+
+.bottom-gallery .first:hover .bottom-first-innerDiv{
+    background-color: #2F42DC;
+    color: white;
+}
+
+.bottom-gallery .first:hover .bottom-first-innerDiv h4{
+    color: white;
+}
+
+.bottom-first-innerDiv {
+    background-color: white;
+    border: none;
+    border-radius: 0.9rem;
+    padding: 0.9rem 1.9rem;
+    
+}
+
+.bottom-first-innerDiv p{
+    font-family: 'Open Sans Hebrew';
+    font-weight: 400;
+    font-size: 1.1rem;  
+}
+
+.bottom-first-innerDiv h4{
+    font-family: 'Open Sans Hebrew';
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #2F42DC;
+}
+
+.bottom-gallery .secound{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50%;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.bottom-gallery-innersec2{
+    display: flex;
+    gap: 1rem;
+}
+
+.bottom-gallery-innersec2 h4{
+    font-family: 'Open Sans Hebrew';
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #2F42DC;
+}
+
+.bottom-gallery-innersec2 p{
+    font-family: 'Open Sans Hebrew';
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+
+/* blue Lady section  */
+
+.blueLady{
+    display:flex;
+    background-color: #2F42DC;
+}
+
+.blueLady .left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.blueLady .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blueLady .right h3{
+    font-family: 'Open Sans Hebrew';
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: white;
+    padding-bottom: 1.7rem;
+}
+
+.blueLady .right p{
+    font-family: 'Open Sans Hebrew';
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.blueLady .right .inputs{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.blueLady .right .inputs input{
+    border: none;
+    padding: 1.4rem 2rem;
+    border-radius: 0.9rem;
+}
+
+.blueLady .right .inputs input{
+    font-family: 'Open Sans Hebrew';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.blueLady .right .inputs .small{
+    width: 100%;
+}
+
+.blueLady .right .inputs .large{
+    width: 150%;
+}
+
+/* footer section  */
+footer{
+    background-color: #1B2780;
+    display: flex;
+    padding: 4rem 6rem;
+}
+
+.footer-first{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20%;
+}
+
+.footer-first .img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.footer-first .img img{
+    width: 60%;
+}
+
+.footer-first i{
+    color: white;
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+
+.footer-first span{
+    font-family: 'Open Sans Hebrew';
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+.footer-first .text{
+    font-weight: 300;
+}
+
+.footer-secound{
+    width: 25%;
+}
+
+.footer-secound h4{
+    font-family: 'Open Sans Hebrew';
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    padding-left: 5rem;
+    margin-bottom: 2rem !important;
+}
+
+.footer-secound .anchors{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.footer-secound .anchors a{
+    text-decoration: none;
+    font-family: 'Open Sans Hebrew';
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-secound .anchors .anchor1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footer-secound .anchors .anchor2{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 0.7rem;
+}
+
+.footer-third{
+    width: 15%;
+}
+
+.footer-third h4{
+    font-family: 'Open Sans Hebrew';
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2rem !important;
+}
+
+.footer-third .third-anchorDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footer-third .third-anchorDiv a{
+    text-decoration: none;
+    font-family: 'Open Sans Hebrew';
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-fourth{
+    width: 40%;
+}
+
+.footer-fourth img{
+    width: 100%;
+}

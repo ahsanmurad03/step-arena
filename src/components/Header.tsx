@@ -1,30 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 const Header: React.FC = () => {
   const location = useLocation()
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const isActive = (path: string) => location.pathname === path
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
   return (
     <header>
-      <div className="topbar">
+      <div className="topbar" id="topbar">
         <div>
           <i className="fa fa-map-marker"></i>
           <span>Marigona Hill</span>
         </div>
         <div className="pipe-line">|</div>
         <div>
-          <i className="fa fa-phone"></i>
-          <span>Contact us: +383 (0) 49 333 934</span>
+          <i className="fa fa-phone-alt"></i>
+          <span>Contact us: <span className="text">+383 (0) 49 333 934</span></span>
         </div>
       </div>
 
       <nav>
-        <div className="navimg">
+        <div className="navimg" id="nav">
           <img src="/assets/images/Logo.png" alt="Step Arena Logo" />
         </div>
-        <div className="nav-menu">
+        <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <Link to="/" className={isActive('/') ? 'active' : ''}>
             HOME
           </Link>
@@ -57,6 +62,9 @@ const Header: React.FC = () => {
           <button>
             <Link to="/memberships">MEMBERSHIPS</Link>
           </button>
+        </div>
+        <div className="hamburger" id="icon" onClick={toggleMenu}>
+          <i className="fa fa-bars"></i>
         </div>
       </nav>
     </header>

@@ -192,7 +192,7 @@ const Home: React.FC = () => {
 
         <div className="secound">
           <div className="bottom-gallery-innersec2">
-            <div>
+            <div className="bottom-gallery-innersec2-img">
               <img src="/assets/images/Screenshot 2025-06-23 233755.png" alt="News 1" />
             </div>
             <div>
@@ -206,7 +206,7 @@ const Home: React.FC = () => {
           </div>
 
           <div className="bottom-gallery-innersec2">
-            <div>
+            <div className="bottom-gallery-innersec2-img">
               <img src="/assets/images/Screenshot 2025-06-23 233817.png" alt="News 2" />
             </div>
             <div>
@@ -220,7 +220,7 @@ const Home: React.FC = () => {
           </div>
 
           <div className="bottom-gallery-innersec2">
-            <div>
+            <div className="bottom-gallery-innersec2-img">
               <img src="/assets/images/Screenshot 2025-06-23 233837.png" alt="News 3" />
             </div>
             <div>
@@ -252,13 +252,11 @@ const Home: React.FC = () => {
             or a recreational visitor.
           </p>
           <div className="inputs">
-            <div>
+            <div className="small-inputDivs">
               <input type="text" placeholder="Emri" className="small" />
-            </div>
-            <div>
               <input type="text" placeholder="Mbiemri" className="small" />
             </div>
-            <div>
+            <div className="large-inputDivs">
               <input type="email" placeholder="Email:" className="large" />
             </div>
           </div>

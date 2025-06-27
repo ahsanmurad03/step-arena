@@ -20,8 +20,16 @@
 .topbar span{
     font-family: 'Open Sans Hebrew';
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     color: white;
+}
+
+.pipe-line{
+    color: white;
+}
+
+.topbar .text{
+  font-weight: 400;
 }
 
 nav{
@@ -41,8 +49,9 @@ nav{
 
 .nav-menu{
     display: flex;
-    align-items: center;
-    gap: 1.5rem;
+    justify-content: center;
+    align-items: center ;
+    gap: 2rem;
     width: 70%;
 }
 
@@ -51,7 +60,7 @@ nav{
     color: black;
     font-family: 'Open Sans Hebrew Condensed';
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .nav-menu a:active{
@@ -95,6 +104,12 @@ nav{
     color: white;
 }
 
+.hamburger{
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 /* -------main section-------  */
 .carousel{
     width: 100%;
@@ -136,6 +151,15 @@ nav{
     font-weight: 500;
     font-size: 1rem;
     color: white;
+}
+
+.carousel-inner .carousel-item img{
+    width: 100%;
+    height: 750px;
+}
+
+.carousel-item .carousel-caption{
+    margin-bottom: 13.5rem;
 }
 
 
@@ -216,6 +240,8 @@ nav{
     color: #2F42DC;
 }
 
+/* gallery section start  */
+
 .third-section{
     width: 100%;
     display: flex;
@@ -228,7 +254,7 @@ nav{
     background-size: cover;                
     background-repeat: no-repeat;
     width: 25%;
-    height: 500px;
+    height: 550px;
 }
 
 .third-section .first:hover{
@@ -241,11 +267,14 @@ nav{
     background-size: cover;                
     background-repeat: no-repeat;
     width: 25%;
-    height: 500px;
+    height: 550px;
 }
 
 .third-section .secound:hover{
     background-image: url('../images/Screenshot 2025-06-23 233258.png');
+    background-position: center center;   
+    background-size: cover;                
+    background-repeat: no-repeat;
 }
 
 .third-section .third{
@@ -254,7 +283,7 @@ nav{
     background-size: cover;                
     background-repeat: no-repeat;
     width: 25%;
-    height: 500px;
+    height: 550px;
 }
 
 .third-section .third:hover{
@@ -267,7 +296,7 @@ nav{
     background-size: cover;                
     background-repeat: no-repeat;
     width: 25%;
-    height: 500px;
+    height: 550px;
 }
 
 .third-section .fourth:hover{
@@ -396,6 +425,7 @@ nav{
     margin-top: 3rem;
 
 }
+
 .inner-banner{
     display: flex;
     width: 100%;
@@ -624,7 +654,7 @@ nav{
 
 .blueLady .right .inputs{
     display: flex;
-    gap: 1rem;
+    gap: 0.8rem;
     width: 100%;
 }
 
@@ -640,8 +670,16 @@ nav{
     font-size: 1rem;
 }
 
+.blueLady .right .inputs .small-inputDivs{
+    width: 50%;
+    display: flex;
+    gap: 0.8rem;
+}
+
+
 .blueLady .right .inputs .small{
-    width: 100%;
+    width: 50%;
+    padding: 1.4rem 2rem;
 }
 
 .blueLady .right .inputs .large{
@@ -686,6 +724,12 @@ footer{
 
 .footer-first .text{
     font-weight: 300;
+}
+
+.first-footericon i{
+    font-size: 1.3rem;
+    padding-top: 1.5rem;
+    opacity: 0.5;
 }
 
 .footer-secound{
@@ -755,9 +799,40 @@ footer{
 }
 
 .footer-fourth{
-    width: 40%;
+    width: 35%;
 }
 
 .footer-fourth img{
-    width: 100%;
+    width: 40%;
+    position: absolute;
+    right: 0;
 }
+
+/* resever section  */
+.reserved{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1B2780;
+    padding: 0rem 6rem;
+}
+
+.reserved .text p{
+    font-family: 'Open Sans Hebrew';
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
+.reserved .reservedIcon span{
+    font-family: 'Open Sans Hebrew';
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    padding-right: 0.8rem;
+}
+
+.reserved .reservedIcon i{
+    font-size: 1.2rem;
+    color: white;
+}
+

@@ -1,0 +1,101 @@
+/* Responsive Design Fixes */
+
+/* Mobile carousel adjustments - only for screens less than 768px */
+@media only screen and (max-width: 768px) {
+    .main-carousel-wrapper .carousel-item {
+        height: 349px;
+        position: relative;
+    }
+    
+    .carousel-inner .carousel-item img {
+        width: 100%;
+        height: 349px;
+        object-fit: cover;
+    }
+    
+    .carousel-inner .carousel-item.active img {
+        width: 100%;
+        height: 349px;
+        object-fit: cover;
+    }
+}
+
+/* Back to top button styling fixes */
+.reserved {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reserved .text p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.reserved .reservedIcon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.reserved .reservedIcon .backTotop {
+    color: #2F42DC;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.reserved .reservedIcon a {
+    color: #2F42DC;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    border-radius: 50%;
+    background-color: rgba(47, 66, 220, 0.1);
+    transition: all 0.3s ease;
+}
+
+.reserved .reservedIcon a:hover {
+    background-color: #2F42DC;
+    color: white;
+}
+
+.reserved .reservedIcon i {
+    font-size: 1rem;
+}
+
+/* Mobile responsive adjustments for back to top */
+@media only screen and (max-width: 768px) {
+    .reserved {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        padding: 1.5rem 1rem;
+    }
+    
+    .reserved .text p {
+        font-size: 0.8rem;
+    }
+    
+    .reserved .reservedIcon .backTotop {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .reserved {
+        padding: 1rem;
+    }
+    
+    .reserved .text p {
+        font-size: 0.75rem;
+    }
+    
+    .reserved .reservedIcon .backTotop {
+        font-size: 0.75rem;
+    }
+} 

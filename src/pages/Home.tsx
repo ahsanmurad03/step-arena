@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Carousel from '../components/Carousel'
 import Gallery from '../components/Gallery'
 import Testimonial from '../components/Testimonial'
+import SwimmingGirlNewsletter from '../components/SwimmingGirlNewsletter'
 
 const Home: React.FC = () => {
   // Carousel data
@@ -235,33 +236,8 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* Newsletter Section */}
-      <div className="blueLady">
-        <div className="left">
-          <img 
-            src="/assets/images/beautiful-happy-young-woman-with-charming-smile-w-2023-11-27-05-11-28-2-e1732276156702 1.png" 
-            alt="Newsletter" 
-          />
-        </div>
-        <div className="right">
-          <h3>Subscribe to the Step Arena Newsletter</h3>
-          <p>
-            Don't miss a thing! Subscribe to our newsletter and get updates straight to your inbox 
-            about new courses, sports events, special offers, and expert tips for a healthy lifestyle. 
-            We're here to keep you informed and inspired – whether you're an athlete, a parent, 
-            or a recreational visitor.
-          </p>
-          <div className="inputs">
-            <div className="small-inputDivs">
-              <input type="text" placeholder="Emri" className="small" />
-              <input type="text" placeholder="Mbiemri" className="small" />
-            </div>
-            <div className="large-inputDivs">
-              <input type="email" placeholder="Email:" className="large" />
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* Swimming Girl Newsletter Section */}
+      <SwimmingGirlNewsletter />
     </div>
   )
 }

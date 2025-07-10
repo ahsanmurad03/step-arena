@@ -249,7 +249,7 @@ nav{
 }
 
 .third-section .first{
-    background-image: url('../images/third-section-first.png');
+    background-image: url('../images/solo-swimmer.png');
     background-position: center center;   
     background-size: cover;                
     background-repeat: no-repeat;
@@ -415,7 +415,7 @@ nav{
 /* banner section  */
 
 .banner{
-    background-image: url('../images/fit-swimmer-training-by-himself (1) 1.png');
+    background-image: url('../images/solo-swimmer.png');
     background-position: center center;   
     background-size: cover;                
     background-repeat: no-repeat;
@@ -540,7 +540,7 @@ nav{
 }
 
 .bottom-gallery .first{
-    background-image: url('../images/group-swimmers-training-outdoor-pool-top-view 1.png');
+    background-image: url('../images/pool-top-view.png');
     background-position: center center;   
     background-size: cover;                
     background-repeat: no-repeat;

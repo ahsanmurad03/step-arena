@@ -1,0 +1,177 @@
+.hotel-restaurant-page {
+  width: 100%;
+}
+
+.blue-bg {
+  background-color: #0066FF;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.blue-bg h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.blue-bg h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.blue-bg p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.gallery-btn {
+  background-color: white;
+  color: #0066FF;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery-btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.feature-grid {
+  padding: 60px 0;
+}
+
+.feature-grid-items {
+  display: grid;
+  gap: 30px;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.feature-item i {
+  font-size: 2.5rem;
+  color: #0066FF;
+  margin-bottom: 1rem;
+}
+
+.feature-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.feature-item p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.nutrition-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.image-content {
+  flex: 1;
+}
+
+.image-content img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.spa-section {
+  padding: 80px 0;
+}
+
+.spa-section h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.spa-section p {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.spa-features {
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .text-content, .image-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .blue-bg h2 {
+    font-size: 2rem;
+  }
+
+  .blue-bg h3 {
+    font-size: 1.5rem;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-grid-items {
+    grid-template-columns: 1fr;
+  }
+} 

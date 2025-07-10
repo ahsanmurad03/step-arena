@@ -10,7 +10,7 @@ const Home: React.FC = () => {
   const carouselSlides = [
     {
       id: 1,
-      image: '/assets/images/view-calm-blue-sea 1.png',
+      image: '/assets/images/calm-sea.png',
       title: 'Step Arena – The Center of Sports and Recreational Excellence',
       description: 'The largest complex in the region for sports, relaxation, and wellness.',
       buttonText: 'Read More',
@@ -18,7 +18,7 @@ const Home: React.FC = () => {
     },
     {
       id: 2,
-      image: '/assets/images/three-male-swimmers-racing-against-each-other 1.png',
+      image: '/assets/images/racing-swimmers.png',
       title: 'Step Aqua Indoor – Training Without Seasons',
       description: '50m Olympic pool, grandstands, children\'s pool, and fresh air.',
       buttonText: 'Read More',
@@ -26,7 +26,7 @@ const Home: React.FC = () => {
     },
     {
       id: 3,
-      image: '/assets/images/view-calm-blue-sea 1.png',
+      image: '/assets/images/calm-sea.png',
       title: 'Aqua Outdoor – Active Summers in Nature',
       description: 'Perfect for competitions, families, and outdoor recreation.',
       buttonText: 'Read More',
@@ -54,28 +54,28 @@ const Home: React.FC = () => {
       id: 1,
       quote: 'Stërvitem në Step Arena që nga hapja. Pishinat janë të standardeve ndërkombëtare dhe ambienti të motivon çdo ditë të japësh më të mirën.',
       name: 'Ardian K.',
-      image: '/assets/images/Ellipse 1.png',
+      image: '/assets/images/ellipse-1.png',
       rating: 5
     },
     {
       id: 2,
       quote: 'Stërvitem në Step Arena që nga hapja. Pishinat janë të standardeve ndërkombëtare dhe ambienti të motivon çdo ditë të japësh më të mirën.',
       name: 'Ardian K.',
-      image: '/assets/images/Ellipse 1 (1).png',
+      image: '/assets/images/ellipse-2.png',
       rating: 5
     },
     {
       id: 3,
       quote: 'Stërvitem në Step Arena që nga hapja. Pishinat janë të standardeve ndërkombëtare dhe ambienti të motivon çdo ditë të japësh më të mirën.',
       name: 'Ardian K.',
-      image: '/assets/images/Ellipse 1 (2).png',
+      image: '/assets/images/ellipse-3.png',
       rating: 5
     },
     {
       id: 4,
       quote: 'Stërvitem në Step Arena që nga hapja. Pishinat janë të standardeve ndërkombëtare dhe ambienti të motivon çdo ditë të japësh më të mirën.',
       name: 'Ardian K.',
-      image: '/assets/images/Ellipse 1 (3).png',
+      image: '/assets/images/ellipse-4.png',
       rating: 5
     }
   ]

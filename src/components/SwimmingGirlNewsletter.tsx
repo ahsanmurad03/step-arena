@@ -29,7 +29,7 @@ const SwimmingGirlNewsletter: React.FC<SwimmingGirlNewsletterProps> = ({ classNa
     <div className={`blueLady ${className}`}>
       <div className="left">
         <img 
-          src="/assets/images/beautiful-happy-young-woman-with-charming-smile-w-2023-11-27-05-11-28-2-e1732276156702 1.png" 
+          src="/assets/images/swimming-woman.png" 
           alt="Newsletter" 
         />
       </div>

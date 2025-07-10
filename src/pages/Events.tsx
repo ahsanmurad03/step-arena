@@ -10,7 +10,7 @@ const Events: React.FC = () => {
       description: 'International swimming competition featuring clubs from 10 European countries.',
       time: '09:00 AM - 06:00 PM',
       category: 'Competition',
-      image: '/assets/images/three-male-swimmers-racing-against-each-other 1.png'
+      image: '/assets/images/racing-swimmers.png'
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const Events: React.FC = () => {
       description: 'Special training workshop for young swimmers aged 8-16 with professional coaches.',
       time: '10:00 AM - 02:00 PM',
       category: 'Workshop',
-      image: '/assets/images/fit-swimmer-training-by-himself (1) 1.png'
+      image: '/assets/images/solo-swimmer.png'
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const Events: React.FC = () => {
       description: 'A day of swimming, games, and activities for the whole family.',
       time: '11:00 AM - 05:00 PM',
       category: 'Family Event',
-      image: '/assets/images/group-swimmers-training-outdoor-pool-top-view 1.png'
+      image: '/assets/images/pool-top-view.png'
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ const Events: React.FC = () => {
       description: 'High-energy water-based fitness classes suitable for all fitness levels.',
       time: '06:00 PM - 08:00 PM',
       category: 'Fitness',
-      image: '/assets/images/view-calm-blue-sea 1.png'
+      image: '/assets/images/calm-sea.png'
     }
   ]
 

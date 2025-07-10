@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import FeatureCard from '../components/FeatureCard'
 import TrainerCard from '../components/TrainerCard'
 import SwimmingGirlNewsletter from '../components/SwimmingGirlNewsletter'
+import HeroSection from '../components/HeroSection'
 
 const About: React.FC = () => {
   // Feature cards data
@@ -27,32 +28,32 @@ const About: React.FC = () => {
   // Staff data
   const staffMembers = [
     {
-      image: '/assets/images/Ellipse 1.png',
+      image: '/assets/images/ellipse-1.png',
       name: 'Ardian Krasniqi',
       designation: 'Head Swimming Coach'
     },
     {
-      image: '/assets/images/Ellipse 1 (1).png',
+      image: '/assets/images/ellipse-2.png',
       name: 'Marina Petrovic',
       designation: 'Aqua Fitness Instructor'
     },
     {
-      image: '/assets/images/Ellipse 1 (2).png',
+      image: '/assets/images/ellipse-3.png',
       name: 'Luka Markovic',
       designation: 'Youth Development Coach'
     },
     {
-      image: '/assets/images/Ellipse 1 (3).png',
+      image: '/assets/images/ellipse-4.png',
       name: 'Elena Radovic',
       designation: 'Wellness Coordinator'
     },
     {
-      image: '/assets/images/Ellipse 1.png',
+      image: '/assets/images/ellipse-1.png',
       name: 'Stefan Jovanovic',
       designation: 'Competitive Swimming Coach'
     },
     {
-      image: '/assets/images/Ellipse 1 (1).png',
+      image: '/assets/images/ellipse-2.png',
       name: 'Ana Milosevic',
       designation: 'Rehabilitation Specialist'
     }
@@ -60,18 +61,12 @@ const About: React.FC = () => {
 
   return (
     <div className="about-page">
-      {/* Hero/Intro Section */}
-      <section className="page-hero about-hero">
-        <div className="hero-content">
-          <h1>Who We Are</h1>
-          <p>
-            Step Arena is more than a sports center – we are a community dedicated to excellence, 
-            wellness, and the pursuit of aquatic mastery. Located in the serene hills of Marigona, 
-            we combine world-class facilities with passionate expertise to create an environment 
-            where champions are born and dreams come to life.
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        title="WHO WE ARE"
+        subtitle="Excellence in Aquatic Sports & Wellness"
+        description="Step Arena is more than a sports center – we are a community dedicated to excellence, wellness, and the pursuit of aquatic mastery. Located in the serene hills of Marigona, we combine world-class facilities with passionate expertise to create an environment where champions are born and dreams come to life."
+        backgroundImage="/assets/images/Frame198.png"
+      />
 
       {/* Who We Do Section */}
       <section className="who-we-do-section">
@@ -93,10 +88,10 @@ const About: React.FC = () => {
         <div className="container">
           <div className="experience-grid">
             <div className="experience-left">
-              <img src="/assets/images/fit-swimmer-training-by-himself (1) 1.png" alt="Professional Swimmer" />
+              <img src="/assets/images/solo-swimmer.png" alt="Professional Swimmer" />
             </div>
             <div className="experience-center">
-              <img src="/assets/images/three-male-swimmers-racing-against-each-other 1.png" alt="Underwater Swimming" />
+              <img src="/assets/images/racing-swimmers.png" alt="Underwater Swimming" />
             </div>
             <div className="experience-right">
               <h3>What We Offer</h3>
@@ -149,7 +144,7 @@ const About: React.FC = () => {
               </div>
             </div>
             <div className="impact-right">
-              <img src="/assets/images/group-swimmers-training-outdoor-pool-top-view 1.png" alt="Kids Swimming Class" />
+              <img src="/assets/images/pool-top-view.png" alt="Kids Swimming Class" />
             </div>
           </div>
           <div className="impact-content centered">

@@ -223,7 +223,7 @@ nav{
 }
 
 .third-section .first{
-    background-image: url('../images/third-section-first.png');
+    background-image: url('../images/solo-swimmer.png');
     background-position: center center;   
     background-size: cover;                
     background-repeat: no-repeat;
@@ -236,7 +236,7 @@ nav{
 }
 
 .third-section .secound{
-    background-image: url('../images/third-section-secound.png');
+    background-image: url('../images/pool-top-view.png');
     background-position: center center;   
     background-size: cover;                
     background-repeat: no-repeat;

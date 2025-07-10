@@ -1,59 +1,64 @@
-import React from 'react'
+import React from 'react';
+import TwoColumnSection from '../components/TwoColumnSection';
+import SwimmingGirlNewsletter from '../components/SwimmingGirlNewsletter';
+import HeroSection from '../components/HeroSection';
 
 const Outdoor: React.FC = () => {
   return (
     <div className="page-container">
-      <div className="page-hero">
-        <h1>Outdoor Facilities</h1>
-        <p>Experience swimming and recreation in nature</p>
-      </div>
-      
-      <div className="page-content">
-        <div className="section-two">
-          <div className="left">
-            <img src="/assets/images/view-calm-blue-sea 1.png" alt="Outdoor Pool" />
-          </div>
-          <div className="right">
-            <h3>Aqua Outdoor – Active Summers in Nature</h3>
-            <p>
-              Our outdoor facilities provide the perfect setting for summer activities, 
-              competitive swimming, and family recreation. Surrounded by the natural beauty 
-              of Marigona Hill, our outdoor pools offer a refreshing escape.
-            </p>
-            <div className="rightsub-para">
-              <p>
-                Perfect for competitions <br />
-                Ideal for families <br />
-                Outstanding for outdoor recreation
-              </p>
-            </div>
-          </div>
-        </div>
+      <HeroSection
+        title="OUTDOOR OLYMPIC POOL & KIDS POOL"
+        subtitle="A World-Class Aquatic Experience Under the Open Sky"
+        description="Discover our exceptional outdoor swimming facilities, featuring an Olympic-size pool and dedicated kids' area, all set against the backdrop of nature's beauty."
+        backgroundImage="/assets/images/view-calm-blue-sea1.png"
+      />
 
-        <div className="facilities-grid">
-          <h2>Outdoor Features</h2>
-          <div className="features-list">
-            <div className="feature-item">
-              <h3>Competition Pool</h3>
-              <p>50-meter Olympic standard pool suitable for professional competitions and training.</p>
-            </div>
-            <div className="feature-item">
-              <h3>Family Pool</h3>
-              <p>Shallow pool perfect for children and family activities with safety features.</p>
-            </div>
-            <div className="feature-item">
-              <h3>Recreation Area</h3>
-              <p>Spacious deck areas with loungers and umbrellas for relaxation.</p>
-            </div>
-            <div className="feature-item">
-              <h3>Natural Setting</h3>
-              <p>Beautiful hillside location offering fresh air and scenic views.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <TwoColumnSection
+        title="Olympic-Standard Swimming Pool"
+        description="Experience swimming excellence in our state-of-the-art outdoor Olympic pool, designed to meet international competition standards while providing a perfect training environment for swimmers of all levels."
+        features={[
+          { text: "50-meter Olympic-size pool", icon: "fa-trophy" },
+          { text: "8 competition lanes", icon: "fa-lanes" },
+          { text: "Professional timing system", icon: "fa-clock" },
+          { text: "Spectator seating area", icon: "fa-users" },
+          { text: "Competition-ready facilities", icon: "fa-star" }
+        ]}
+        imageSrc="/assets/images/racing-swimmers.png"
+        imageAlt="Olympic Pool"
+        imageLeft={false}
+      />
+
+      <TwoColumnSection
+        title="Kids Pool & Learning Center"
+        description="Our dedicated kids' pool provides a safe and fun environment for children to learn swimming and enjoy water activities. Certified instructors ensure proper guidance and safety at all times."
+        features={[
+          { text: "Shallow depth for safety", icon: "fa-shield" },
+          { text: "Heated water year-round", icon: "fa-temperature-high" },
+          { text: "Professional instructors", icon: "fa-user-tie" },
+          { text: "Fun water features", icon: "fa-water" }
+        ]}
+        imageSrc="/assets/images/solo-swimmer.png"
+        imageAlt="Kids Pool"
+        imageLeft={true}
+      />
+
+      <TwoColumnSection
+        title="Outdoor Sports & Recreation"
+        description="Beyond swimming, our outdoor facilities offer various sports and recreational activities. Stay fit and active while enjoying the fresh air and natural surroundings."
+        features={[
+          { text: "Multi-purpose sports court", icon: "fa-basketball-ball" },
+          { text: "Outdoor fitness area", icon: "fa-dumbbell" },
+          { text: "Running track", icon: "fa-running" },
+          { text: "Recreation zones", icon: "fa-umbrella-beach" }
+        ]}
+        imageSrc="/assets/images/OUTDOOR.png"
+        imageAlt="Outdoor Sports"
+        imageLeft={false}
+      />
+
+      <SwimmingGirlNewsletter />
     </div>
-  )
-}
+  );
+};
 
-export default Outdoor 
+export default Outdoor; 

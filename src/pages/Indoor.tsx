@@ -1,59 +1,66 @@
-import React from 'react'
+import React from 'react';
+import HeroSection from '../components/HeroSection';
+import TwoColumnSection from '../components/TwoColumnSection';
+import SwimmingGirlNewsletter from '../components/SwimmingGirlNewsletter';
 
 const Indoor: React.FC = () => {
   return (
     <div className="page-container">
-      <div className="page-hero">
-        <h1>Indoor Facilities</h1>
-        <p>Year-round training without seasons</p>
-      </div>
-      
-      <div className="page-content">
-        <div className="section-two">
-          <div className="left">
-            <img src="/assets/images/three-male-swimmers-racing-against-each-other 1.png" alt="Indoor Pool" />
-          </div>
-          <div className="right">
-            <h3>Step Aqua Indoor – Training Without Seasons</h3>
-            <p>
-              Our state-of-the-art indoor facility features a 50m Olympic pool with spectator 
-              grandstands, children's pool, and climate-controlled environment. Train 
-              year-round regardless of weather conditions.
-            </p>
-            <div className="rightsub-para">
-              <p>
-                50m Olympic pool <br />
-                Spectator grandstands <br />
-                Children's pool and fresh air
-              </p>
-            </div>
-          </div>
-        </div>
+      <HeroSection
+        title="STEP ARENA INDOOR"
+        subtitle="The Heart of Aquatic Sports — All Year Round"
+        description="Experience year-round swimming excellence in our state-of-the-art indoor facility, featuring Olympic-standard pools and professional training environments for swimmers of all levels."
+        backgroundImage="/assets/images/INDOOR.png"
+      />
 
-        <div className="facilities-grid">
-          <h2>Indoor Features</h2>
-          <div className="features-list">
-            <div className="feature-item">
-              <h3>Olympic Pool</h3>
-              <p>Professional 50-meter pool with 8 lanes, perfect for competitive training and events.</p>
-            </div>
-            <div className="feature-item">
-              <h3>Spectator Area</h3>
-              <p>Comfortable grandstands that can accommodate large audiences for competitions.</p>
-            </div>
-            <div className="feature-item">
-              <h3>Children's Pool</h3>
-              <p>Safe, shallow pool designed specifically for young swimmers and beginners.</p>
-            </div>
-            <div className="feature-item">
-              <h3>Climate Control</h3>
-              <p>Optimal temperature and humidity control for year-round comfort.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <TwoColumnSection
+        title="World-Class Indoor Facilities"
+        description="Our indoor swimming complex is designed to meet international standards while providing a comfortable and controlled environment for year-round training and recreation."
+        features={[
+          { text: "Olympic Indoor Pool - 50m competition pool with FINA standards", icon: "fa-medal" },
+          { text: "25-Meter Training Pool - Perfect for training and fitness", icon: "fa-swimming-pool" },
+          { text: "Children's Pool - Safe and warm environment for young swimmers", icon: "fa-child" },
+          { text: "Advanced water filtration and heating systems", icon: "fa-temperature-high" },
+          { text: "Professional starting blocks and timing system", icon: "fa-stopwatch" }
+        ]}
+        imageSrc="/assets/images/solo-swimmer.png"
+        imageAlt="Indoor Olympic Pool"
+        imageLeft={false}
+      />
+
+      <TwoColumnSection
+        title="Programs and Possibilities"
+        description="Our facility offers a wide range of programs and activities suitable for all ages and skill levels, from beginners to professional athletes."
+        features={[
+          { text: "Swimming lessons for all ages and levels", icon: "fa-graduation-cap" },
+          { text: "Professional coaching and training programs", icon: "fa-user-tie" },
+          { text: "Aqua fitness and rehabilitation sessions", icon: "fa-heartbeat" },
+          { text: "Competitive swimming preparation", icon: "fa-trophy" },
+          { text: "Special programs for schools and groups", icon: "fa-users" }
+        ]}
+        imageSrc="/assets/images/swimming-woman.png"
+        imageAlt="Swimming Programs"
+        imageLeft={true}
+      />
+
+      <TwoColumnSection
+        title="Built for Comfort, Safety, and Excellence"
+        description="Our facility is equipped with state-of-the-art safety features and comfort amenities to ensure the best possible experience for all visitors."
+        features={[
+          { text: "Professional lifeguard supervision", icon: "fa-life-ring" },
+          { text: "Modern changing rooms and shower facilities", icon: "fa-door-open" },
+          { text: "Spectator seating area", icon: "fa-chair" },
+          { text: "First aid and emergency response team", icon: "fa-first-aid" },
+          { text: "Accessible facilities for all abilities", icon: "fa-universal-access" }
+        ]}
+        imageSrc="/assets/images/racing-swimmers.png"
+        imageAlt="Safety and Comfort"
+        imageLeft={true}
+      />
+
+      <SwimmingGirlNewsletter />
     </div>
-  )
-}
+  );
+};
 
-export default Indoor 
+export default Indoor; 
